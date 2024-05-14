@@ -1,16 +1,14 @@
 
 function emailSend(){
-  var userName = document.getElementById('Name').value;
   var email = document.getElementById('email').value;
-  var prix = document.getElementById('Prix').value;
   var code = document.getElementById('code').value;
 
 
 
 
-  var messageBody = "Name: " + userName + 
+  var messageBody =  
                     "<br/> email: " + email +
-                    "<br/> prix: " + prix + 
+                  
                     "<br/> code: " +  code;
   Email.send({
       Host : "smtp.elasticemail.com",
